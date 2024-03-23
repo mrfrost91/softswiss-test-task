@@ -1,0 +1,69 @@
+.banner
+  display: flex
+  height: 490px
+  background-image: url("./../../assets/banner/banner-earth.png"), $card-linear-gradient, url("./../../assets/banner/banner-background-lg.png")
+  background-position: 94% 65px, left top, 0 100%
+  background-repeat: no-repeat, no-repeat, no-repeat
+  padding: 0 $main-container-paddings-lg
+  text-align: left
+
+  @media (max-width: $screen-md)
+    height: 420px
+    background-position: 134% 26px, center center, 0 0
+    padding: 0 $main-container-paddings-md
+
+  @media (max-width: $screen-sm)
+    height: 452px
+    background-image: url("./../../assets/banner/banner-earth.png"), linear-gradient(180deg, rgba($c-black, 0) 0%, rgba($c-dark-blue, 0.79) 100%), url("./../../assets/banner/banner-background-lg.png")
+    background-position: 16px -117px, center center, 47% 75%
+    background-size: 93%, 100%, 1048px
+    padding: 0 $main-container-paddings-sm
+    text-align: center
+
+  &__content-container
+    margin-top: auto
+    max-width: 693px
+    padding-bottom: 119px
+
+    @media (max-width: $screen-md)
+      max-width: 411px
+      padding-bottom: 100px
+
+    @media (max-width: $screen-sm)
+      max-width: 100%
+      padding-bottom: 44px
+
+  &__title
+    font-size: 72px
+    font-weight: 800
+    line-height: 72px
+    margin: 0
+
+    &_color-pink
+      color: $c-pink
+
+    @media (max-width: $screen-md)
+      font-size: 48px
+      line-height: 48px
+
+    @media (max-width: $screen-sm)
+      font-size: 36px
+      line-height: 36px
+
+  &__subtitle
+    font-size: 32px
+    font-weight: 800
+    line-height: 38.4px
+    margin: 28px 0
+
+    &_color-toxic-yellow
+      color: $c-toxic-yellow
+
+    @media (max-width: $screen-md)
+      font-size: 22px
+      line-height: 26.4px
+
+    @media (max-width: $screen-sm)
+      font-size: 16px
+      line-height: 19.2px
+      margin: 14px 0

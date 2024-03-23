@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.sass';
+import { Header } from './components/Header';
+import { MainContainer } from './components/MainContainer';
+import { Banner } from './components/Banner';
+import { Footer } from './components/Footer';
+import { Offers } from './components/Offers';
+import { InfoText } from './components/InfoText';
 
 function App() {
   return (
+    // eslint-disable-next-line react/jsx-filename-extension
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <MainContainer>
+        <Banner className="out-of-main-container section-gap" />
+        <Offers className="section-gap" />
+        <InfoText className="section-gap" />
+      </MainContainer>
+      <Footer />
     </div>
   );
 }

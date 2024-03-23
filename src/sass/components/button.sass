@@ -1,0 +1,49 @@
+.button
+  cursor: pointer
+
+  &:hover
+    opacity: .6
+
+  &_anchor
+    display: inline-block
+
+  &_contained
+    background-color: $c-toxic-yellow
+    border-radius: 100px
+    color: $c-black
+    font-size: 22px
+    padding: 14px 40px
+
+    @media (max-width: $screen-sm)
+      font-size: 16px
+      padding-bottom: 7px
+      padding-top: 7px
+
+  &_outlined
+    background-color: transparent
+    border: 2px solid $c-toxic-yellow
+    border-radius: 100px
+    color: $c-toxic-yellow
+    font-size: 22px
+    padding: 12px 39px
+
+    @media (max-width: $screen-md)
+      font-size: 16px
+      padding-bottom: 6px
+      padding-top: 6px
+
+  &_text
+    background-color: transparent
+    color: $c-toxic-yellow
+    font-size: 20px
+    line-height: 24px
+    font-weight: 800
+
+    @media (max-width: $screen-md)
+      font-size: 16px
+      line-height: 19.2px
+
+    @media (max-width: $screen-sm)
+      font-size: 14px
+      font-weight: 700
+      line-height: 16.8px
